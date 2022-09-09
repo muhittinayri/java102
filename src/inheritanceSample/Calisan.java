@@ -36,14 +36,24 @@ public class Calisan {
     }
 
     public void giris(){
-        System.out.println(this.adSoyad + " Üniversiteye giriş yaptı !");
+        System.out.println(this.getAdSoyad() + " Üniversiteye giriş yaptı !");
+    }
+
+    //Method overlodading - Methodlarda aşırı yüklenme
+    public void giris(String girisSaati){
+        System.out.println(this.getAdSoyad() + " " + girisSaati + " saatinde üniversiteye giriş yaptı !");
+    }
+
+    //Method overlodading - Methodlarda aşırı yüklenme
+    public void giris(String girisSaati, String cikisSaati){
+        System.out.println(this.getAdSoyad() + " " + girisSaati + " saatinde üniversiteye giriş yaptı ve " + cikisSaati + " bu saatte çıkacaktır !");
     }
 
     public void cikis(){
-        System.out.println(this.adSoyad + " Üniversiteden çıkış yaptı !");
+        System.out.println(this.getAdSoyad() + " Üniversiteden çıkış yaptı !");
     }
 
     public void yemekhane(){
-        System.out.println(this.adSoyad + " Yemekhaneye girdi !");
+        System.out.println(this.getAdSoyad() + " Yemekhaneye girdi !");
     }
 }

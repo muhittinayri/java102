@@ -29,5 +29,13 @@ public class Patika {
 
         LabAsistanı l1 = new LabAsistanı("Eren Ayrı", "01324654", "eren@patika.dev", "IT", "Asistan", "12-15");
         l1.lablaraGir();
+
+        o1.giris("10.00");
+        //Method overlodading - Methodlarda aşırı yüklenme
+        o1.giris("10.00","18.00");
+        a1.giris();
+
+        //Method Overriding - Metotlarda Geçersiz Kılma
+        o1.giris();
     }
 }
