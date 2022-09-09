@@ -1,6 +1,6 @@
 package inheritanceSample;
 
-public class Memur extends Calisan {
+public abstract class Memur extends Calisan {
     private String departman;
     private String mesai;
 

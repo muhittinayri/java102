@@ -1,6 +1,6 @@
 package inheritanceSample;
 
-public class Calisan {
+public abstract class Calisan {
     private String adSoyad;
     private String telefon;
     private String eposta;

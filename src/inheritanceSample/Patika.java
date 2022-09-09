@@ -2,13 +2,14 @@ package inheritanceSample;
 
 public class Patika {
     public static void main(String[] args) {
+    /*
 
         Calisan c1 = new Calisan("Mehmet Ayrı", "0123456789", "info@patika.dev");
         System.out.println(c1.getAdSoyad());
         Akademisyen a1 = new Akademisyen("Muhittin Ayrı", "123456789", "muhittin@patika.dev", "cebg", "doçent");
-        a1.derseGir();
+        //a1.derseGir();
 
-        Memur m1 = new Memur("Ali Ayrı", "123456798", "ali@patika.dev", "IT", "09-18");
+        //Memur m1 = new Memur("Ali Ayrı", "123456798", "ali@patika.dev", "IT", "09-18");
         m1.calis();
 
         OgretimGorevlisi o1 = new OgretimGorevlisi("Gönül Ayrı", "123456789", "gonul@patika.com", "IT", "prof", "2");
@@ -33,7 +34,7 @@ public class Patika {
         //o1.giris("10.00");
         //Method overlodading - Methodlarda aşırı yüklenme
         //o1.giris("10.00","18.00");
-        a1.giris();
+        //a1.giris();
 
         //Method Overriding - Metotlarda Geçersiz Kılma
         o1.giris();
@@ -41,12 +42,12 @@ public class Patika {
         System.out.println("**********************************************");
         //Polymorphism - Çok biçimlilik
         o1.giris();
-        a1.giris();
+        //a1.giris();
         c1.giris();
         m1.giris();
 
-        Calisan a2 = new Akademisyen("Eren Ayrı", "01324654", "eren@patika.dev", "IT", "Asistan");
-        a2.giris();
+        //Calisan a2 = new Akademisyen("Eren Ayrı", "01324654", "eren@patika.dev", "IT", "Asistan");
+        //a2.giris();
 
         System.out.println("**********************************************");
 
@@ -57,5 +58,13 @@ public class Patika {
         Calisan.girisYapanlar(loginUser);
 
         System.out.println("**********************************************");
+
+        */
+        //Abstraction (Soyutlama)
+
+        //Akademisyen a1 = new Akademisyen("Muhittin Ayrı", "123456789", "muhittin@patika.dev", "cebg", "doçent");
+
+        OgretimGorevlisi o1 = new OgretimGorevlisi("Gönül Ayrı", "123456789", "gonul@patika.com", "IT", "prof", "2");
+        o1.derseGir("18.00");
     }
 }
