@@ -30,12 +30,32 @@ public class Patika {
         LabAsistanı l1 = new LabAsistanı("Eren Ayrı", "01324654", "eren@patika.dev", "IT", "Asistan", "12-15");
         l1.lablaraGir();
 
-        o1.giris("10.00");
+        //o1.giris("10.00");
         //Method overlodading - Methodlarda aşırı yüklenme
-        o1.giris("10.00","18.00");
+        //o1.giris("10.00","18.00");
         a1.giris();
 
         //Method Overriding - Metotlarda Geçersiz Kılma
         o1.giris();
+
+        System.out.println("**********************************************");
+        //Polymorphism - Çok biçimlilik
+        o1.giris();
+        a1.giris();
+        c1.giris();
+        m1.giris();
+
+        Calisan a2 = new Akademisyen("Eren Ayrı", "01324654", "eren@patika.dev", "IT", "Asistan");
+        a2.giris();
+
+        System.out.println("**********************************************");
+
+        //Polymorphism - Çok biçimlilik
+
+        //int[] loginUser = new int[5];
+        Calisan[] loginUser = {c1, a1, m1, o1};
+        Calisan.girisYapanlar(loginUser);
+
+        System.out.println("**********************************************");
     }
 }
